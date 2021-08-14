@@ -1,0 +1,20 @@
+@import '../variables.scss';
+
+.coursesContent{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    margin:$margin;
+    font-family: $font;
+    h1{
+        text-align: center;
+    }
+    .leftContent{
+        margin: 10px;
+    }
+    .rightContent{
+        margin: 10px;
+    }
+
+}

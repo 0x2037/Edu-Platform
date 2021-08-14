@@ -1,0 +1,12 @@
+@import '../variables.scss';
+
+.banner{
+    position: absolute;
+    top: 10.5%;
+    left: 0;
+    background: $bannerColor;
+    background-position: center;
+    width: 100%;
+    height: 30vh;
+    z-index: 0;
+}

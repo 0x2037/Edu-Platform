@@ -1,0 +1,110 @@
+@import "../variables.scss";
+
+nav {
+  display: flex;
+  height: 13vh;
+  background-color: $primaryColor;
+  position: sticky;
+  padding: 0px 20px;
+  font-family: $font;
+  border-radius: 0px 0px 10px 10px;
+  //box-shadow: 0px 4px 50px 10px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  .logo{
+      position: absolute;
+      top: 18%;
+      .logoContent{
+          text-decoration: none;
+          color: $secondaryColor;
+      }
+  }
+  .search {
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    input {
+      background-color: #6db7ff;
+      border: none;
+      padding: 10px;
+      transition: 0.4s;
+      width: 15vw;
+      font-family: $font;
+      font-size: 18px;
+      border-radius: 10px;
+      color: $secondaryColor;
+      padding-left: 15%;
+    }
+    input:focus{
+        animation-delay: 12s;
+        transition: 0.4s;
+        outline: none;
+        width: 21vw;
+        border: 2px solid white;
+    }
+    i{
+        color: $secondaryColor;
+        font-size: 20px;
+        position: absolute;
+        top: 25%;
+        left: 5%;
+    }
+  }
+  .linksSection {
+    position: absolute;
+    left: 70%;
+    top: 25%;
+    display: flex;
+    text-align: center;
+    .links {
+      text-decoration: none;
+      i {
+        transition: 0.4s;
+        color: $secondaryColor;
+        text-align: center;
+        font-size: 2vw;
+        margin: 10px 25px 10px 25px;
+      }
+      p {
+        transition: 0.4s;
+        position: relative;
+        bottom: 40%;
+        opacity: 0;
+        font-weight: 600;
+        text-decoration: none;
+        color: $secondaryColor;
+      }
+    }
+    .links:hover {
+      p {
+        transition: 0.4s;
+        bottom: 20%;
+        opacity: 100;
+      }
+      i {
+        transition: 0.4s;
+        color: black;
+      }
+    }
+  }
+  .profile {
+    position: absolute;
+    right: 2%;
+    top: 20%;
+    margin-right: 20px;
+    text-align: center;
+    .profile1 {
+      text-decoration: none;
+    }
+    p {
+      margin-top: 0;
+      color: $secondaryColor;
+      text-decoration: none;
+    }
+    img {
+      border-radius: 50%;
+      height: 60px;
+      width: 60px;
+      object-fit: cover;
+    }
+  }
+}
