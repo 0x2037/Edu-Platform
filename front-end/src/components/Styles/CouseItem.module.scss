@@ -3,6 +3,7 @@
 .container{
     text-decoration: none;
     color: black;
+    margin: 20px;
     .courseItem{
         transition: 0.3s;
         display: grid;
@@ -46,3 +47,23 @@
         }
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .container{
+        margin: 20px;
+        padding: 10px;
+        .courseItem{
+            grid-template-columns: 1fr;
+            .leftContent{
+                display: flex;
+                justify-content: center;
+                align-items: center;   
+            }
+            .rightContent{
+                h1{
+                    text-align: center;
+                }
+            }
+        }
+    }
+  }

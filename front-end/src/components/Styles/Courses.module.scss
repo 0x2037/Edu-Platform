@@ -16,5 +16,11 @@
     .rightContent{
         margin: 10px;
     }
+}
 
+@media only screen and(max-width:600px){
+    .coursesContent{
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
 }

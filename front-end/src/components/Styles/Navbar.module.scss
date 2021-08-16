@@ -1,6 +1,8 @@
 @import "../variables.scss";
 
 nav {
+  top: 0;
+  left: 0;
   display: flex;
   height: 13vh;
   background-color: $primaryColor;
@@ -8,15 +10,17 @@ nav {
   padding: 0px 20px;
   font-family: $font;
   border-radius: 0px 0px 10px 10px;
+  width: 100%;
   //box-shadow: 0px 4px 50px 10px rgba(0, 0, 0, 0.5);
   z-index: 10;
-  .logo{
-      position: absolute;
-      top: 18%;
-      .logoContent{
-          text-decoration: none;
-          color: $secondaryColor;
-      }
+  .logo {
+    position: absolute;
+    top: 18%;
+    left: 10%;
+    .logoContent {
+      text-decoration: none;
+      color: $secondaryColor;
+    }
   }
   .search {
     position: absolute;
@@ -34,35 +38,39 @@ nav {
       color: $secondaryColor;
       padding-left: 15%;
     }
-    input:focus{
-        animation-delay: 12s;
-        transition: 0.4s;
-        outline: none;
-        width: 21vw;
-        border: 2px solid white;
+    input:focus {
+      animation-delay: 12s;
+      transition: 0.4s;
+      outline: none;
+      width: 21vw;
+      border: 2px solid white;
     }
-    i{
-        color: $secondaryColor;
-        font-size: 20px;
-        position: absolute;
-        top: 25%;
-        left: 5%;
+    i {
+      color: $secondaryColor;
+      font-size: 20px;
+      position: absolute;
+      top: 25%;
+      left: 5%;
     }
   }
   .linksSection {
     position: absolute;
-    left: 70%;
-    top: 25%;
+    left: 63%;
+    top: 30%;
     display: flex;
     text-align: center;
     .links {
       text-decoration: none;
+      transition: 0.4s;
+      margin: 0px 10px 0px 10px;
       i {
         transition: 0.4s;
         color: $secondaryColor;
         text-align: center;
         font-size: 2vw;
         margin: 10px 25px 10px 25px;
+        position: relative;
+        font-size: 30px;
       }
       p {
         transition: 0.4s;
@@ -77,12 +85,14 @@ nav {
     .links:hover {
       p {
         transition: 0.4s;
-        bottom: 20%;
+        bottom: 25%;
         opacity: 100;
       }
       i {
         transition: 0.4s;
         color: black;
+        bottom: 10%;
+        font-size: 25px;
       }
     }
   }
@@ -105,6 +115,42 @@ nav {
       height: 60px;
       width: 60px;
       object-fit: cover;
+    }
+  }
+  #navbarToggle{
+    display: none;
+  }
+}
+
+//responsive website for mobile screens (media query)
+@media only screen and (max-width: 600px) {
+  nav {
+    width: 100%;
+    padding: 0;
+    .search {
+      display: none;
+    }
+    .linksSection {
+      display: none;
+    }
+    .profile{
+      display: none;
+    }
+    #navbarToggle{
+      transition: 0.4s;
+      display: inline;
+      position: absolute;
+      right: 10%;
+      top:30%;
+      font-size: 38px;
+      background-color: transparent;
+      border: none;
+    }
+    #navbarToggle:active{
+      transition: 0.4s;
+      transform: rotate(90deg);
+      animation-duration: 3s;
+      color: white;
     }
   }
 }

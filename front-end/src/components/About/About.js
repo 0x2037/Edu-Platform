@@ -4,7 +4,7 @@ import Card from "../UI/Card";
 
 const About = () => { 
   return (
-    <Fragment>
+    <Fragment className={styles.container}>
       <Card className={styles.cardContent}>
         <div className={styles.leftContent}>
           <h1>Cine suntem?</h1>

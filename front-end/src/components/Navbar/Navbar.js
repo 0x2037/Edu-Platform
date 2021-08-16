@@ -1,7 +1,23 @@
-import React from "react";
+import React,{useState} from "react";
 import styles from "../Styles/Navbar.module.scss";
 import { Link } from "react-router-dom";
+import MobileNav from "./MobileNav";
 const Navbar = () => {
+
+  const [toggle,setToggle]=useState(false);
+
+  const closeToggle=()=>{
+    setToggle(!toggle);
+  }
+
+  let mobileToggle=null;
+  if(toggle){
+    mobileToggle=<MobileNav closeToggle={closeToggle}/>
+  }
+  else{
+    mobileToggle=null;
+  }
+
   return (
     <nav>
       <div className={styles.logo}>
@@ -36,6 +52,8 @@ const Navbar = () => {
           <p>Dorian Popa</p>
         </Link>
       </div>
+      <button id={styles.navbarToggle} onClick={closeToggle}><i class="fas fa-bars"></i></button>
+      {mobileToggle}
     </nav>
   );
 };
