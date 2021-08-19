@@ -52,4 +52,4 @@ jobs:
         app-name: 'edu-platform'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_4f96b295be5a4d48bbd1bc15114c0628 }}
-        package: ./front-end/
+        package: .
