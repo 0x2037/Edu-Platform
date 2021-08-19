@@ -25,8 +25,10 @@ jobs:
     - name: npm install & build
       working-directory: ./front-end/
       run: |
-        npm ci
-        npm run build
+        npm install -g
+        rm -rf node_modules
+        npm install
+        npm install -g react-scripts
 
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v2
