@@ -1,0 +1,54 @@
+@import "../variables.scss";
+
+.cardContent {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  font-family: $font;
+  margin: $margin;
+  .leftContent {
+    padding: 100px;
+    h1 {
+      background: $highlightTextColor;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p {
+      text-align: left;
+      font-size: 30px;
+    }
+  }
+  .rightContent {
+    padding: 100px;
+    h1 {
+      background: $highlightTextColor;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p {
+      font-size: 30px;
+      text-align: left;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .cardContent {
+    margin: 0;
+    grid-template-columns: 1fr;
+    .leftContent {
+      padding: 20px;
+      p{
+        font-size: $mobileFontSize;
+      }
+    }
+    .rightContent {
+      padding: 20px;
+      p{
+        font-size: $mobileFontSize;
+      }
+    }
+    
+  }
+}

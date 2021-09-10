@@ -1,0 +1,135 @@
+@import "../variables.scss";
+
+nav {
+  top: 0;
+  left: 0;
+  display: flex;
+  height: 13vh;
+  background: $navbarBackground;
+  position: sticky;
+  padding: 0px;
+  font-family: $font;
+  border-radius: 0px 0px 10px 10px;
+  width: 100%;
+  //box-shadow: 0px 4px 50px 10px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  .logo {
+    position: absolute;
+    top: 18%;
+    left: 10%;
+    .logoContent {
+      text-decoration: none;
+      color: $secondaryColor;
+    }
+  }
+  .search {
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    input {
+      background-color: #6db7ff;
+      border: none;
+      padding: 10px;
+      transition: 0.4s;
+      width: 15vw;
+      font-family: $font;
+      font-size: 18px;
+      border-radius: 10px;
+      color: $secondaryColor;
+      padding-left: 15%;
+    }
+    input:focus {
+      animation-delay: 12s;
+      transition: 0.4s;
+      outline: none;
+      width: 21vw;
+      border: 2px solid white;
+    }
+    i {
+      color: $secondaryColor;
+      font-size: 20px;
+      position: absolute;
+      top: 25%;
+      left: 5%;
+    }
+  }
+  .linksSection {
+    position: absolute;
+    left: 63%;
+    top: 30%;
+    display: flex;
+    text-align: center;
+    .links {
+      text-decoration: none;
+      transition: 0.4s;
+      margin: 0px 10px 0px 10px;
+      i {
+        transition: 0.4s;
+        color: $secondaryColor;
+        text-align: center;
+        font-size: 2vw;
+        margin: 10px 25px 10px 25px;
+        position: relative;
+        font-size: 30px;
+      }
+      p {
+        transition: 0.4s;
+        position: relative;
+        bottom: 40%;
+        opacity: 0;
+        font-weight: 600;
+        text-decoration: none;
+        color: $secondaryColor;
+      }
+    }
+    .links:hover {
+      p {
+        transition: 0.4s;
+        bottom: 25%;
+        opacity: 100;
+      }
+      i {
+        transition: 0.4s;
+        color: black;
+        bottom: 10%;
+        font-size: 25px;
+      }
+    }
+  }
+  #navbarToggle{
+    display: none;
+  }
+}
+
+//responsive website for mobile screens (media query)
+@media only screen and (max-width: 600px) {
+  nav {
+    width: 100%;
+    padding: 0;
+    .search {
+      display: none;
+    }
+    .linksSection {
+      display: none;
+    }
+    .profile{
+      display: none;
+    }
+    #navbarToggle{
+      transition: 0.4s;
+      display: inline;
+      position: absolute;
+      right: 10%;
+      top:30%;
+      font-size: 38px;
+      background-color: transparent;
+      border: none;
+    }
+    #navbarToggle:active{
+      transition: 0.4s;
+      transform: rotate(90deg);
+      animation-duration: 3s;
+      color: white;
+    }
+  }
+}

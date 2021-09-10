@@ -1,0 +1,30 @@
+@import "../variables.scss";
+
+.accountBtn {
+  position: absolute;
+  top: 35%;
+  right: 4%;
+  z-index: 4;
+  #loginBtn {
+    background: $loginBtnBackground;
+    border-radius: 10px;
+    border: 5px solid $loginBorder;
+    font-family: $font;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 2px 15px;
+    color: white;
+    margin-right:20px;
+    cursor: pointer;
+  }
+  #signUpBtn {
+    background: $signUpBtnBackground;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: transparent;
+    color: white;
+    cursor: pointer;
+  }
+}

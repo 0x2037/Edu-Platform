@@ -1,0 +1,87 @@
+@import '../variables.scss';
+
+footer{
+    position: relative;
+    background-color: $footerBackground;
+    color: $footerTextColor;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 15px 15px 0px 0px;
+    padding: 0px 20px 0px 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: $font;
+    margin: 0;
+    .leftContent{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+        .socialMedia{
+            h1{
+                margin-bottom: 0;
+            }
+            .socialMediaIcons{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                font-size: 30px;
+                i{
+                    margin: 15px; 
+                }
+            }
+        }
+        .bar{
+            position: absolute;
+            right: 45%;
+            top: 15%;
+            width: 4px;
+            height: 70%;
+            background-color: #446E99;
+        }
+        .contact{
+            h1{
+                margin-bottom: 0;
+            }
+            .phoneNumber{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                i{
+                    margin-right: 10px;
+                }
+            }
+            .email{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                i{
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    .rightContent{
+        position: relative;
+        input{
+            width: 80%;
+            height: 40px;
+            border-radius: 50px;
+            border: none;
+        }
+        input:focus{
+            outline: none;
+        }
+        button{
+            position: absolute;
+            right: 11%;
+            top: 68.6%;
+            border-radius: 50px;
+            border: none;
+            height: 35px;
+            color:white;
+            background-color: $primaryColor;
+        }
+    }
+}
