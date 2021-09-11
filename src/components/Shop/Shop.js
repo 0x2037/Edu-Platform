@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 const Shop = () => {
   const [listBenefits, setListBenefits] = [];
   const [selectedBenefits, setSelectedBenefits] = useState([]);
+  const [test,setTest]=useState('');
 
   return (
       <div className={styles.shop}>
