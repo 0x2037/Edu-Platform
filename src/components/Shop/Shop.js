@@ -7,6 +7,7 @@ const Shop = () => {
   const [listBenefits, setListBenefits] = [];
   const [selectedBenefits, setSelectedBenefits] = useState([]);
   const [ni,setNi]=useState('');
+  const [test,setTest]=useState('');
 
   return (
       <div className={styles.shop}>
