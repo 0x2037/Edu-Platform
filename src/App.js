@@ -11,6 +11,7 @@ import Shop from './components/Shop/Shop';
 import Footer from './components/UI/Footer';
 import SignUp from './components/Account/SignUp';
 import Login from './components/Account/Login';
+import AccessDenied from './components/Error/AccessDenied';
 function App() {
   return (
     <Router>
@@ -23,6 +24,7 @@ function App() {
         <Route path="/shop" exact component={Shop}/>
         <Route path="/signup" exact component={SignUp}/>
         <Route path="/login" exact component={Login} />
+        <Route component={AccessDenied} />
       </Switch>
       <Footer />
     </Router>

@@ -1,0 +1,17 @@
+@import '../variables.scss';
+
+.btn{
+    transition: 0.4s;
+    color: white;
+    border: 3px solid white;
+    border-radius: 20px;
+    font-size: 30px;
+    background: transparent;
+    padding: 5px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    transition: 0.4s;
+    background: black;
+}

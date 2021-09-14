@@ -1,0 +1,12 @@
+@import '../variables.scss';
+
+.selectedBenefit{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    #benefitName{
+        color: $primaryColor;
+      font-size: 25px;
+      font-weight: 600;
+    }
+}
