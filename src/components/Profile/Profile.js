@@ -1,9 +1,16 @@
 import React from 'react'
 import styles from '../Styles/Profile.module.scss';
+import ProfileNav from './ProfileNav';
 
-const Profile=()=>{
+
+const Profile=(props)=>{
     return(
-        <div>Profile</div>
+        <div className={styles.profile}>
+            <ProfileNav />
+            <div className={styles.content}>
+                {props.children}
+            </div>
+        </div>
     )
 }
 

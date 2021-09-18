@@ -2,9 +2,9 @@ import React from "react";
 import styles from "../Styles/Avatar.module.scss";
 
 import { Link } from "react-router-dom";
-const Avatar = () => {
+const Avatar = (props) => {
   return (
-    <div className={styles.profile}>
+    <div className={`${styles.profile} ${props.className}`}>
       <Link className={styles.profile1} to="/profile">
         <img
           id={styles.profileAvatar}

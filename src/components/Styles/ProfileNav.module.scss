@@ -1,0 +1,30 @@
+@import '../variables.scss';
+
+.profileNav{
+    display: flex;
+    flex-direction: column;
+    .link{
+        border-radius: 15px 0px 0px 15px;
+        padding: 25px 0px 25px 10px;
+        text-decoration: none;
+        color: white;
+        .avatarLink{
+            top:10%;
+            position: relative;
+        }
+    }
+    #activeLink{
+        border-radius: 15px 0px 0px 15px;
+        padding: 15px;
+        background: white;
+        text-decoration: none;
+        color: black;
+        .avatarLink{
+            position: relative;
+            p{
+                color: black;
+            }
+        }
+    }
+    
+}
