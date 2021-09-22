@@ -1,0 +1,96 @@
+@import '../variables.scss';
+
+
+.profileSettings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    .changeEmail{
+        border-radius: 15px;
+        border: 3px solid $primaryColor;
+        padding: 0px 0px 20px 0px;
+        width: 93%;
+        margin-bottom: 30px;
+        h1{
+            font-size: 20px;
+            margin: 0;
+            padding:5px;
+            background: $primaryColor;
+            border-radius: 11px 11px 15px 15px;
+            color: white;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            input{
+                margin: 5px;
+                border-radius: 15px;
+                border:2px solid $primaryColor;
+                padding: 7px;
+                font-size: 20px;
+            }
+            input:focus{
+                outline: none;
+            }
+            #changeEmailBtn{
+                background: $highlightTextColor;
+                width: 30%;
+                font-size: 25px;
+                position: relative;
+                left:68%;
+                top:10px;
+                font-weight: 600;
+            }
+            p{
+                font-size: 15px;
+                margin: 5px 0px 5px 10px;
+            }
+        }
+    }
+    .changePassword{
+        border-radius: 15px;
+        border: 3px solid $primaryColor;
+        padding: 0px 0px 20px 0px;
+        width: 93%;
+        margin-bottom: 30px;
+        h1{
+            font-size: 20px;
+            margin: 0;
+            padding:5px;
+            background: $primaryColor;
+            border-radius: 11px 11px 15px 15px;
+            color:white;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            input{
+                margin: 5px;
+                border-radius: 15px;
+                border:2px solid $primaryColor;
+                padding: 7px;
+                font-size: 20px;
+            }
+            input:focus{
+                outline: none;
+            }
+            #changeEmailBtn{
+                background: $highlightTextColor;
+                width: 30%;
+                font-size: 25px;
+                position: relative;
+                left:68%;
+                top:10px;
+                font-weight: 600;
+            }
+            p{
+                font-size: 15px;
+                margin: 5px 0px 5px 10px;
+            }
+        }
+    }
+}
